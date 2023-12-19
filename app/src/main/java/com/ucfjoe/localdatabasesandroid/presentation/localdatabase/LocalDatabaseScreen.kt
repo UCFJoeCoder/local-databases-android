@@ -51,7 +51,7 @@ fun LocalDatabaseScreen(
             )
             DatabaseListColumn(
                 modifier = Modifier.fillMaxWidth(),
-                databaseName = "SqlDelight",
+                databaseName = "SQLDelight",
                 teams = state.teamsSqlDelight,
                 databaseType = DatabaseType.SQL_DELIGHT,
                 onEvent = onEvent

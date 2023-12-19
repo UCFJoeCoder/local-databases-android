@@ -24,7 +24,7 @@ fun DatabaseSelectionRadioButtons(
     Row(verticalAlignment = Alignment.CenterVertically) {
         Row(
             Modifier
-                .fillMaxWidth(.33f)
+                .fillMaxWidth(.30f)
                 .clickable { onEvent(LocalDatabaseEvents.OnActiveDatabaseChanged(ActiveDatabaseType.ROOM)) },
             verticalAlignment = Alignment.CenterVertically
         ) {
@@ -36,7 +36,7 @@ fun DatabaseSelectionRadioButtons(
         }
         Row(
             Modifier
-                .fillMaxWidth(.5f)
+                .fillMaxWidth(.4f)
                 .clickable { onEvent(LocalDatabaseEvents.OnActiveDatabaseChanged(ActiveDatabaseType.BOTH)) },
             verticalAlignment = Alignment.CenterVertically
         ) {
@@ -56,7 +56,7 @@ fun DatabaseSelectionRadioButtons(
                 selected = state.activeDatabaseType == ActiveDatabaseType.SQL_DELIGHT,
                 onClick = { onEvent(LocalDatabaseEvents.OnActiveDatabaseChanged(ActiveDatabaseType.SQL_DELIGHT)) }
             )
-            Text("SqlDelight", color = MaterialTheme.colorScheme.onSurface)
+            Text("SQLDelight", color = MaterialTheme.colorScheme.onSurface)
         }
     }
 }
